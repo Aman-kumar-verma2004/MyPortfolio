@@ -38,7 +38,7 @@ function App() {
           <Route path="/Blog" element={<Blog />}/>
         </Routes>
         </motion.div>
-        <Footer />
+        
       </Router>
       
     </div>
