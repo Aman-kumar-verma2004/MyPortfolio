@@ -12,30 +12,7 @@ function Hero() {
         <div className="w-[1px] h-80 mb-10 bg-[#7B7B7B] mb-[-50px]"></div>
         <p className="text-[#7B7B7B] text-sm md:text-base mb-[-120px]">2025</p>
       </div>
-      <div className="absolute top-10 md:top-20 left-1/2 transform -translate-x-1/2 flex space-x-10 text-center">
-        <div className="text-white">
-          <motion.h2
-            className="text-3xl md:text-4xl font-bold text-black ml-[-750px] mt-15"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            +200
-          </motion.h2>
-          <p className="text-[#7B7B7B] text-sm md:text-base ml-[-750px]">Projects Completed</p>
-        </div>
-        <div className="text-white">
-          <motion.h2
-            className="text-3xl md:text-4xl font-bold text-black ml-[-350px] mt-15"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            +50
-          </motion.h2>
-          <p className="text-[#7B7B7B] text-sm md:text-base ml-[-350px]">Startups Raised</p>
-        </div>
-      </div>
+      
       {/* Left Side: Text */}
       <div className="md:w-1/2 text-black text-center md:text-left ml-[150px]">
         <motion.h1

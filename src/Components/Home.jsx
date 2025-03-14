@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from "./Hero"
-
+import Footer from "./Footer"
 import About from "./About"
 import Projects from "./Projects"
 function Home() {
@@ -9,7 +9,7 @@ function Home() {
       <Hero />
       <Projects />
       <About />
-     
+      <Footer />
     </div>
   )
 }
