@@ -6,12 +6,12 @@ function Footer() {
   return (
     <div>
       <footer className="py-6 bg-white text-black flex flex-col md:flex-row justify-between items-center px-6 md:px-20 gap-4">
-        {/* Left Side: Image */}
+        
         <div className="flex items-center justify-center md:justify-start">
           <img src={footerImage} alt="Footer Logo" className="h-16 w-16 md:h-24 md:w-24 object-cover rounded-full" />
         </div>
 
-        {/* Center: Copyright */}
+        
         <p className="text-sm md:text-base text-center order-last md:order-none">
           © 2025 Aman Kumar Verma. All rights reserved.
         </p>
