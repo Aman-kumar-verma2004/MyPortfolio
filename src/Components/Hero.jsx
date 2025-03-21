@@ -44,7 +44,7 @@ function Hero() {
           <motion.img
             src={isHovered ? alternateImage : heroImage}
             alt="Profile"
-            className="h-[600px] w-[400px] object-cover rounded-full"
+            className="h-[600px] w-[400px] object-cover rounded-full mt-10"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             whileHover={{  scale: 1.1 }}
