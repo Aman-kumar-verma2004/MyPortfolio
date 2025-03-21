@@ -1,8 +1,14 @@
 import React from 'react';
+import {useState} from "react"
 import { motion } from 'framer-motion';
 import heroImage from '../assets/heroImage.png';
+import alternateImage from '../assets/alternate.png'
 
 function Hero() {
+
+  const[isHovered, setIsHovered] = useState(false);
+
+
   return (
     <div>
       <section className="h-screen flex flex-col md:flex-row justify-center items-center text-white px-6 md:px-16">
@@ -36,12 +42,15 @@ function Hero() {
         {/* Right Side: Hero Image */}
         <div className="md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0 mr-0 md:mr-[100px]">
           <motion.img
-            src={heroImage}
+            src={isHovered ? alternateImage : heroImage}
             alt="Profile"
-            className="h-[300px] w-[200px] md:h-[600px] md:w-[400px] object-cover rounded-lg"
+            className="h-[600px] w-[400px] object-cover rounded-full"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
+            whileHover={{  scale: 1.1 }}
             transition={{ duration: 1, delay: 0.5 }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
           />
         </div>
       </section>
