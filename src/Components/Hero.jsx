@@ -40,19 +40,19 @@ function Hero() {
         </div>
 
         {/* Right Side: Hero Image */}
-        <div className="md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0 mr-0 md:mr-[100px]">
-          <motion.img
-            src={isHovered ? alternateImage : heroImage}
-            alt="Profile"
-            className="h-[600px] w-[400px] object-cover rounded-full mt-10"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            whileHover={{  scale: 1.1 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          />
-        </div>
+        <div className="h-[400px] w-[300px] mt-5 flex items-center justify-center md:h-[600px] md:w-[350px]">
+  <motion.img
+    src={isHovered ? alternateImage : heroImage}
+    alt="Profile"
+    className="h-full w-full object-cover rounded-full"
+    initial={{ opacity: 0, scale: 0.8 }}
+    animate={{ opacity: 1, scale: 1 }}
+    whileHover={{ scale : 1.1 }}
+    transition={{ duration: 0.6 }}
+    onMouseEnter={() => setIsHovered(true)}
+    onMouseLeave={() => setIsHovered(false)}
+  />
+</div>
       </section>
     </div>
   );
