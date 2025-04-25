@@ -5,8 +5,10 @@ import picture from '../assets/picture.webp';
 import Quote from '../assets/QuoteGenerator.webp';
 import Job from '../assets/JobPortal.webp';
 import Customer from '../assets/Customer.webp';
+import Event from '../assets/event.jpeg';
 
 const projects = [
+  { title: 'Event Ticketing Platform', description: 'A full-stack Event Ticketing Web App that allows users to create events, enroll using QR-code-based tickets, and verify entries through real-time QR scanning. ', image: Event, link: 'https://github.com/Aman-kumar-verma2004/Event-Ticketing-Platform' },
   { title: 'Quiz App', description: 'A dynamic quiz application', image: Quiz, link: 'https://quiz-app-sigma-ruddy.vercel.app/' },
   { title: 'Picture-in-Picture', description: 'Floating video viewer', image: picture, link: 'https://picture-in-picture-eight.vercel.app/' },
   { title: 'Quote Generator', description: 'Inspiring quote generator', image: Quote, link: 'https://github.com/Aman-kumar-verma2004/Quote-Generator.git' },
